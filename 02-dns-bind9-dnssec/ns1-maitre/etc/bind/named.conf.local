@@ -1,0 +1,21 @@
+//
+// Do any local configuration here
+//
+zone "informatique.fst" {
+                           type master;
+                           file "/var/cache/bind/informatique.fst.db";
+			   allow-transfer {192.168.1.5;};
+			   ixfr-from-differences yes;
+			   dnssec-policy "tp2DNS";
+			   inline-signing yes;
+};
+
+zone "1.168.192.in-addr.arpa" {
+                                type master;
+                                file "/var/cache/bind/rev.informatique.fst.db";
+				allow-transfer {192.168.1.5;};
+				ixfr-from-differences yes;
+                                dnssec-policy "tp2DNS";
+                                inline-signing yes;
+
+};

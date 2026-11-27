@@ -1,0 +1,5 @@
+# Secrets : ne jamais publier
+*.private
+rndc.key
+ddns-keys/
+*.jnl

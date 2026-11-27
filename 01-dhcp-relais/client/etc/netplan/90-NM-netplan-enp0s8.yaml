@@ -1,0 +1,15 @@
+network:
+  version: 2
+  ethernets:
+    enp0s8:
+      renderer: NetworkManager
+      match: {}
+      dhcp4: true
+      dhcp6: true
+      networkmanager:
+        uuid: "9a683faa-2cc7-384f-9230-8beaf91f9f29"
+        name: "netplan-enp0s8"
+        passthrough:
+          connection.timestamp: "1792916927"
+          ipv6.ip6-privacy: "-1"
+          proxy._: ""

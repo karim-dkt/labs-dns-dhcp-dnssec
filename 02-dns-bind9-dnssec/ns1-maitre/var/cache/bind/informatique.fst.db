@@ -1,0 +1,25 @@
+$TTL	604800
+@	IN	SOA	ns1.informatique.fst.	root.informatique.fst. (
+                                2026102803	; Serial
+                                604800		; Refresh
+                                86400		; Retry
+                                2419200		; Expire
+				604800 )	;Negative Cache TTL
+;
+@	IN	NS	ns1.informatique.fst.
+@	IN	NS	ns2.informatique.fst.
+@	IN	A	192.168.1.4
+
+
+ns1	IN	A	192.168.1.4
+ns2	IN	A	192.168.1.5
+poste1	IN	A	192.168.1.15
+poste2	IN	A	192.168.1.20
+poste3	IN	A	192.168.1.25
+poste4	IN	A	192.168.1.30
+
+www	IN	CNAME	poste1
+ftp	IN	CNAME	poste1
+web2	IN	CNAME	poste2
+web3	IN	CNAME	poste3
+web4	IN	CNAME	poste4

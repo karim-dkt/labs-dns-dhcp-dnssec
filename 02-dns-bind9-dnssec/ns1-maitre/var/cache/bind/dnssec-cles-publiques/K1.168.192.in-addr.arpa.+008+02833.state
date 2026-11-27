@@ -1,0 +1,16 @@
+; This is the state of key 2833, for 1.168.192.in-addr.arpa.
+Algorithm: 8
+Length: 2048
+Lifetime: 2592000
+KSK: no
+ZSK: yes
+Generated: 20261101075623 (Sun Nov  1 07:56:23 2026)
+Published: 20261101075623 (Sun Nov  1 07:56:23 2026)
+Active: 20261101075623 (Sun Nov  1 07:56:23 2026)
+Retired: 20261201075623 (Tue Dec  1 07:56:23 2026)
+Removed: 20261217090123 (Thu Dec 17 09:01:23 2026)
+DNSKEYChange: 20261101100123 (Sun Nov  1 10:01:23 2026)
+ZRRSIGChange: 20261101075623 (Sun Nov  1 07:56:23 2026)
+DNSKEYState: omnipresent
+ZRRSIGState: rumoured
+GoalState: omnipresent

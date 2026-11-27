@@ -1,0 +1,10 @@
+options {
+	directory "/var/cache/bind";
+};
+
+dnssec-policy "tp2DNS" {
+				max-zone-ttl 7d;
+				keys {
+					ksk key-directory lifetime P30D algorithm RSASHA256 2048;
+					zsk key-directory lifetime P30D algorithm RSASHA256 2048;};
+};

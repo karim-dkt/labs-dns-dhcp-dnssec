@@ -1,0 +1,17 @@
+//
+// Do any local configuration here
+//
+
+zone "informatique.fst" {
+				//type slave;
+				//file "/var/cache/bind/informatique.fst.db";
+				//masters {192.168.1.4;};
+				type forward;
+				forwarders {192.168.1.4 port 15356;};
+};
+
+zone "1.168.192.in-addr.arpa" {
+				type slave;
+				file "/var/cache/bind/rev.informatique.fst.db";
+				masters {192.168.1.4;};
+};
